@@ -68,6 +68,9 @@ class Sample:
         for i in mylist:
             yield i
 
+    def MergeInterval(self, listeA, listB):
+
+
 sample = Sample(100)
 # sample.progressbar()
 #
@@ -84,5 +87,5 @@ sample.printarray(data)
 
 q2data1 = [10, -1, 0, 2, 4, 10]
 q2data2 = [-5, 1]
-print(q2data1, q2data2)
+
 
