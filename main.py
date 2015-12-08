@@ -1,7 +1,5 @@
 import click
 from time import sleep
-
-
 # from array import array
 
 
@@ -68,15 +66,15 @@ class Sample:
         for i in mylist:
             yield i
 
-    def MergeInterval(self, listeA, listB):
-
+    #def MergeInterval(self, listeA, listB):
 
 sample = Sample(100)
-# sample.progressbar()
-#
-# myGenerator = sample.createGenerator()
-# for i in myGenerator:
-#     print(i)
+sample.progressbar()
+
+myGenerator = sample.createGenerator()
+for i in myGenerator:
+    print(i)
+    
 data = [5, 1, 3, 8, 7, 4, 2, 9, 6]
 sample.printarray(data)
 sample.mergesort(data)
