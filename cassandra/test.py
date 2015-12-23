@@ -2,8 +2,8 @@ from cassandra.cluster import Cluster
 import random
 import string
 
-cluster = Cluster(['10.144.57.203'])
-session = cluster.connect('test')
+cluster = Cluster(['127.0.0.1'])
+session = cluster.connect('gbs')
 #session.set_keyspace('test')
 #session.execute('use test')
 
@@ -23,7 +23,7 @@ session.execute(
 #for r in rows:
 #    print r[0], r[1], r[2]
 
-for x in range(0, 10000) :
+for x in range(0, 1000) :
     s1 = ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(16))
     s2 = ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(16))
     #print s1, s2
